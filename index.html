@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>محصولات غذایی دیریکال</title>
+    <link
+      rel="shortcut icon"
+      href="./public/images/output-onlinepngtools.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/css/main.css" />
+
+    <style>
+      .font-vazir {
+        font-family: "Vazir", sans-serif;
+      }
+      .element {
+        animation: slideFromLeft 1s ease-out;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .bg-olive {
+        background-color: #4e5a3d;
+      }
+      .text-olive {
+        color: #4e5a3d;
+      }
+      .bg-earth-red {
+        background-color: #793c32;
+      }
+      .text-earth-red {
+        color: #793c32;
+      }
+      .bg-card {
+        background-color: #5f6846;
+      }
+      .bg-dark-green {
+        background-color: #37402c;
+      }
+      .bg-background {
+        background-image: url(./public/images/background.jpg);
+      }
+    </style>
+  </head>
+  <body class="bg-olive text-[#e7e1d5] font-vazir">
+    <!-- Top Info Bar -->
+    <div class="bg-earth-red py-4 text-[#e7e1d5] text-lg">
+      <div
+        class="container mx-auto flex flex-wrap justify-between items-center font-semibold px-4"
+      >
+        <!-- Right Side: Text -->
+        <div class="md:text-right text-center w-auto mb-3">
+          برای دریافت مشاوره، اطلاعات بیشتر یا ثبت سفارش، از طریق شماره واتساپ و
+          پیج اینستاگرام با ما در ارتباط باشید.
+        </div>
+
+        <!-- Left Side: Contact Links -->
+        <div class="flex flex-wrap justify-center gap-10 items-center">
+          <span class="flex items-center gap-2">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"
+              alt="WhatsApp"
+              class="w-5 h-5"
+            />
+            واتساپ:
+            <a
+              href="https://wa.me/989939852799"
+              class="underline hover:text-white"
+              >09939852799</a
+            >
+          </span>
+
+          <span class="flex items-center gap-2">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+              alt="Instagram"
+              class="w-5 h-5"
+            />
+            اینستاگرام:
+            <a
+              href="https://instagram.com/diriqal"
+              class="underline hover:text-white"
+              >@diriqal</a
+            >
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="bg-dark-green py-6 px-4 shadow-lg mb-10">
+      <div
+        class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-6 text-center sm:text-right"
+      >
+        <!-- Logo -->
+        <div class="flex-shrink-0 element">
+          <img
+            src="/images/logo%20diriqal.jpg"
+            alt="لوگو دیریکال"
+            class="w-24 sm:w-28 rounded-xl shadow-md"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- متن برند -->
+        <div class="element">
+          <h1
+            class="text-3xl font-extrabold text-[#4e5a3d] drop-shadow-[0_2px_3px_rgba(0,0,0,0.3)] sm:drop-shadow-[0_3px_6px_rgba(0,0,0,0.4)]"
+          >
+            محصولات غذایی دیریکال
+          </h1>
+          <p class="text-lg text-[#e7e1d5]/80 font-medium mt-1">
+            طبیعی، سالم و ارگانیک برای یک زندگی با کیفیت
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav
+      class="flex justify-center gap-6 text-lg font-bold text-[#e7e1d5] mb-10"
+    >
+      <a
+        href="#products"
+        class="px-5 py-2 border border-[#e7e1d5] rounded-2xl bg-transparent backdrop-blur-sm hover:bg-[#e7e1d5]/90 hover:text-[#37402c] hover:border-[#2b2b2b] transition-all duration-300 ease-in-out shadow-[0_2px_10px_rgba(0,0,0,0.2)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.3)] cursor-pointer hover:translate-y-[-4px]"
+      >
+        محصولات
+      </a>
+      <a
+        href="#videos"
+        class="px-5 py-2 border border-[#e7e1d5] rounded-2xl bg-transparent backdrop-blur-sm hover:bg-[#e7e1d5]/90 hover:text-[#37402c] hover:border-[#2b2b2b] transition-all duration-300 ease-in-out shadow-[0_2px_10px_rgba(0,0,0,0.2)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.3)] cursor-pointer hover:translate-y-[-4px]"
+      >
+        ویدیوها
+      </a>
+      <a
+        href="#about"
+        class="px-5 py-2 border border-[#e7e1d5] rounded-2xl bg-transparent backdrop-blur-sm hover:bg-[#e7e1d5]/90 hover:text-[#37402c] hover:border-[#2b2b2b] transition-all duration-300 ease-in-out shadow-[0_2px_10px_rgba(0,0,0,0.2)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.3)] cursor-pointer hover:translate-y-[-4px]"
+      >
+        درباره ما
+      </a>
+    </nav>
+
+    <!-- Product Section -->
+    <section
+      id="products"
+      class="px-6 md:px-20 py-10 bg-dark-green rounded-t-3xl bg-background bg-no-repeat bg-cover bg-center bg-blend-overlay bg-olive bg-transparent"
+    >
+      <h2
+        class="text-center mb-14 text-3xl font-extrabold text-[#c5c9bf] drop-shadow-[0_2px_3px_rgba(0,0,0,0.3)] sm:drop-shadow-[0_3px_6px_rgba(0,0,0,0.4)] transition-transform duration-500 transform hover:translate-x-4"
+      >
+        محصولات ما
+      </h2>
+
+      <!-- دسته: زیتون پرورده -->
+      <div class="mb-12">
+        <div
+          class="mb-6 p-4 bg-earth-red text-[#e7e1d5] text-xl font-bold rounded-xl shadow-lg text-center"
+        >
+          انواع زیتون‌های ما
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- کارت‌های زیتون پرورده -->
+          <div
+            class="group bg-card cursor-pointer rounded-2xl border border-[#3a4332] hover:border-earth-red hover:border-[#d6cfb9] shadow-xl hover:shadow-2xl hover:scale-[1.02] transition duration-300 ease-in-out p-5"
+          >
+            <img
+              src="./public/images/زیتون کنسروی.webp"
+              alt="زیتون کنسروی"
+              class="rounded-xl w-full h-60 object-cover mb-4 transition duration-300 group-hover:brightness-110 group-hover:contrast-105"
+            />
+            <h3
+              class="text-2xl font-bold text-[#e7e1d5] text-center mb-1 transition group-hover:text-earth-red"
+            >
+              زیتون کنسروی
+            </h3>
+            <p
+              class="text-sm text-[#cfc7b6] text-center group-hover:text-[#f1eee8] transition"
+            >
+              خوش‌طعم، بدون مواد نگهدارنده – مناسب برای سفره‌های ایرانی
+            </p>
+          </div>
+
+          <div
+            class="group bg-card cursor-pointer rounded-2xl border border-[#3a4332] hover:border-[#d6cfb9] shadow-xl hover:shadow-2xl hover:scale-[1.02] transition duration-300 ease-in-out p-5"
+          >
+            <img
+              src="./public/images/زیتون شکسته.jpg"
+              alt="زیتون شکسته"
+              class="rounded-xl w-full h-60 object-cover mb-4 transition duration-300 group-hover:brightness-110 group-hover:saturate-125"
+            />
+            <h3
+              class="text-2xl font-bold text-[#e7e1d5] text-center mb-1 transition"
+            >
+              زیتون شکسته
+            </h3>
+            <p
+              class="text-sm text-[#d6d0c1] text-center group-hover:text-[#f2ede5] transition"
+            >
+              طعم اصیل و خانگی – فراوری‌شده با نمک طبیعی و بدون مواد افزودنی
+            </p>
+          </div>
+
+          <div
+            class="group bg-card cursor-pointer rounded-2xl border border-[#3a4332] hover:border-[#f0e9d9] shadow-xl hover:shadow-2xl hover:scale-[1.02] transition duration-300 ease-in-out p-5"
+          >
+            <img
+              src="./public/images/روغن زیتون فرابکر.jpg"
+              alt="روغن زیتون فرابکر"
+              class="rounded-xl w-full h-60 object-cover mb-4 transition duration-300 group-hover:brightness-110 group-hover:contrast-110"
+            />
+            <h3
+              class="text-2xl font-bold text-[#e7e1d5] text-center mb-1 transition"
+            >
+              روغن زیتون فرابکر
+            </h3>
+            <p
+              class="text-sm text-[#d8d1c3] text-center group-hover:text-[#f3ede3] transition"
+            >
+              عصاره‌ زیتون‌های تازه – ۱۰۰٪ خالص، سالم و بدون تصفیه
+            </p>
+          </div>
+
+          <div
+            class="group bg-card cursor-pointer rounded-2xl border border-[#3a4332] hover:border-[#e2dbcb] shadow-xl hover:shadow-2xl hover:scale-[1.02] transition duration-300 ease-in-out p-5"
+          >
+            <img
+              src="./public/images/زیتون-پرورده.jpg"
+              alt="زیتون پرورده"
+              class="rounded-xl w-full h-60 object-cover mb-4 transition duration-300 group-hover:brightness-110 group-hover:saturate-125"
+            />
+            <h3
+              class="text-2xl font-bold text-[#e7e1d5] text-center mb-1 transition"
+            >
+              زیتون پرورده در 4 مدل
+            </h3>
+            <p
+              class="text-sm text-[#d9d3c4] text-center group-hover:text-[#f5efe7] transition"
+            >
+              ترکیبی خوشمزه از رب انار، گردو و ادویه‌های شمالی – طعمی ماندگار
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- دسته: رب انار -->
+      <div class="mb-12">
+        <div
+          class="mb-6 p-4 bg-earth-red text-[#e7e1d5] text-xl font-bold rounded-xl shadow-lg text-center"
+        >
+          رب انار طبیعی ما
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!--کارت‌های رب انار -->
+          <div
+            class="group bg-card cursor-pointer rounded-2xl border border-[#3a4332] hover:border-[#d6cfb9] hover:border-earth-red shadow-xl hover:shadow-2xl hover:scale-[1.02] transition duration-300 ease-in-out p-5"
+          >
+            <img
+              src="./public/images/رب انار ملس.jpg"
+              alt="رب انار ملس "
+              class="rounded-xl w-full h-60 object-cover mb-4 transition duration-300 group-hover:brightness-110 group-hover:contrast-105"
+            />
+            <h3
+              class="text-2xl font-bold text-[#e7e1d5] text-center mb-1 transition group-hover:text-earth-red"
+            >
+              رب انار ملس
+            </h3>
+            <p
+              class="text-sm text-[#cfc7b6] text-center group-hover:text-[#f1eee8] transition"
+            >
+              چکیده‌ انارهای رسیده – ترش و شیرین، درست مثل طعم خاطره‌ها
+            </p>
+          </div>
+
+          <div
+            class="group bg-card cursor-pointer rounded-2xl border border-[#3a4332] hover:border-[#d6cfb9] shadow-xl hover:shadow-2xl hover:scale-[1.02] transition duration-300 ease-in-out p-5"
+          >
+            <img
+              src="./public/images/رب انار ترش.jpg"
+              alt=" رب انار ترش"
+              class="rounded-xl w-full h-60 object-cover mb-4 transition duration-300 group-hover:brightness-110 group-hover:saturate-125"
+            />
+            <h3
+              class="text-2xl font-bold text-[#e7e1d5] text-center mb-1 transition"
+            >
+              رب انار ترش
+            </h3>
+            <p
+              class="text-sm text-[#d6d0c1] text-center group-hover:text-[#f2ede5] transition"
+            >
+              رب اناری از دل باغ‌های شمال، ترش و سرشار از طعم اصالت و طبیعت
+            </p>
+          </div>
+
+          <div
+            class="group bg-card cursor-pointer rounded-2xl border border-[#3a4332] hover:border-[#f0e9d9] shadow-xl hover:shadow-2xl hover:scale-[1.02] transition duration-300 ease-in-out p-5"
+          >
+            <img
+              src="./public/images/رب انار شیرین.jpeg"
+              alt="  رب انار شیرین"
+              class="rounded-xl w-full h-60 object-cover mb-4 transition duration-300 group-hover:brightness-110 group-hover:contrast-110"
+            />
+            <h3
+              class="text-2xl font-bold text-[#e7e1d5] text-center mb-1 transition"
+            >
+              رب انار شیرین
+            </h3>
+            <p
+              class="text-sm text-[#d8d1c3] text-center group-hover:text-[#f3ede3] transition"
+            >
+              رب اناری با شیرینی طبیعی و رنگی دلربا – مناسب برای ذائقه‌های لطیف
+              و عاشقانه
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- سایر محصولات -->
+      <div
+        class="mb-6 p-4 bg-earth-red text-[#e7e1d5] text-xl font-bold rounded-xl shadow-lg text-center"
+      >
+        سایر محصولات
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- سیر ترشی-->
+        <div
+          class="group bg-card cursor-pointer rounded-2xl border border-[#3a4332] hover:border-[#f0e9d9] shadow-xl hover:shadow-2xl hover:scale-[1.02] transition duration-300 ease-in-out p-5"
+        >
+          <img
+            src="./public/images/سیر ترشی.jpg"
+            alt=" سیر ترشی"
+            class="rounded-xl w-full h-60 object-cover mb-4 transition duration-300 group-hover:brightness-110 group-hover:contrast-110"
+          />
+          <h3
+            class="text-2xl font-bold text-[#e7e1d5] text-center mb-1 transition"
+          >
+            سیر ترشی
+          </h3>
+          <p
+            class="text-sm text-[#d6cfbd] text-center group-hover:text-[#f3ede3] transition"
+          >
+            طعمی اصیل و جاافتاده، حاصل ماه‌ها صبر و هنر – سیر ترشی‌ خانگی با عطر
+            و رنگی بی‌نظیر
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- video section -->
+    <section
+      id="videos"
+      class="py-12 px-20 bg-earth-red bg-opacity-80 backdrop-blur-sm shadow-[0_5px_15px_rgba(0,0,0,0.4)]"
+    >
+      <h2
+        class="text-center text-3xl font-extrabold text-[#e7e1d5] mb-8 drop-shadow-lg tracking-wide relative"
+        style="
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
+            0 0 10px rgba(255, 255, 255, 0.3);
+        "
+      >
+        زیتون بخور، مثل گرگ باش!
+      </h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
+        <!-- ویدیو اول -->
+        <div
+          class="relative rounded-2xl overflow-hidden bg-black/40 border border-white/20 shadow-lg backdrop-blur-md"
+          style="aspect-ratio: 9/16"
+        >
+          <video
+            id="video1"
+            class="w-full h-full object-contain bg-black rounded-2xl"
+            poster="https://www.w3schools.com/html/mov_bbb.jpg"
+            controls
+            controlsList="nodownload"
+          >
+            <source src="./public/videos/video-1.mp4" type="video/mp4" />
+            مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+          </video>
+          <button
+            id="playBtn1"
+            class="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/50 transition-all duration-300 z-10 cursor-pointer"
+          >
+            <div
+              class="bg-white/20 hover:bg-white/30 p-6 rounded-full backdrop-blur-md shadow-[0_4px_20px_rgba(255,255,255,0.3)] transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-white"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </button>
+        </div>
+
+        <!-- ویدیو دوم -->
+        <div
+          class="relative rounded-2xl overflow-hidden bg-black/40 border border-white/20 shadow-lg backdrop-blur-md"
+          style="aspect-ratio: 9/16"
+        >
+          <video
+            id="video2"
+            class="w-full h-full object-contain bg-black rounded-2xl"
+            poster="./public/videos/video-3.mp4"
+            controls
+            controlsList="nodownload"
+          >
+            <source src="./public/videos/video-3.mp4" type="video/mp4" />
+            مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+          </video>
+          <button
+            id="playBtn2"
+            class="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/50 transition-all duration-300 z-10 cursor-pointer"
+          >
+            <div
+              class="bg-white/20 hover:bg-white/30 p-6 rounded-full backdrop-blur-md shadow-[0_4px_20px_rgba(255,255,255,0.3)] transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-white"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </button>
+        </div>
+
+        <!-- ویدیو سوم -->
+        <div
+          class="relative rounded-2xl overflow-hidden bg-black/40 border border-white/20 shadow-lg backdrop-blur-md"
+          style="aspect-ratio: 9/16"
+        >
+          <video
+            id="video3"
+            class="w-full h-full object-contain bg-black rounded-2xl"
+            poster="./public/videos/video-2.mp4"
+            controls
+            controlsList="nodownload"
+          >
+            <source src="./public/videos/video-2.mp4" type="video/mp4" />
+            مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+          </video>
+          <button
+            id="playBtn3"
+            class="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/50 transition-all duration-300 z-10 cursor-pointer"
+          >
+            <div
+              class="bg-white/20 hover:bg-white/30 p-6 rounded-full backdrop-blur-md shadow-[0_4px_20px_rgba(255,255,255,0.3)] transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-white"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="relative py-16 px-4 sm:px-6 md:px-12 lg:px-32 overflow-hidden text-[#e7e1d5] bg-background bg-no-repeat bg-cover bg-center bg-blend-overlay bg-dark-green bg-transparent"
+    >
+      <div
+        class="absolute inset-0 bg-no-repeat bg-right-top opacity-5 pointer-events-none"
+      ></div>
+
+      <div
+        class="backdrop-blur-sm bg-white/5 border border-white/10 rounded-2xl shadow-xl mx-auto p-5 sm:p-8 md:p-10 text-center animate-fade-in-up w-full max-w-[90%] sm:max-w-[600px] md:max-w-[800px] h-auto relative"
+      >
+        <h2
+          class="text-xl sm:text-2xl md:text-4xl font-extrabold mb-6 tracking-tight inline-block pb-2 text-[#37402c] line-clamp-1"
+          style="text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3)"
+        >
+          درباره ما
+        </h2>
+
+        <p
+          class="text-sm sm:text-base md:text-lg leading-6 sm:leading-7 md:leading-8 font-light"
+        >
+          ما باور داریم که سلامتی از دل طبیعت آغاز می‌شود. به همین دلیل، با عشق،
+          دقت و احترام به زمین، محصولاتی طبیعی و باکیفیت بر پایه زیتون تولید
+          می‌کنیم.
+          <br />
+          تمرکز ما بر حفظ طعم اصیل، استفاده از مواد اولیه سالم و تولیدی صادقانه
+          است.
+          <br />
+          در سبد محصولات ما زیتون پرورده، روغن زیتون فرابکر، رب انار و زیتون
+          شکسته و... وجود دارد.
+        </p>
+
+        <div
+          class="w-full mt-12 px-4 sm:px-6 py-10 text-center relative bg-[#37402c] rounded-xl shadow-lg"
+        >
+          <p
+            class="text-base sm:text-xl font-semibold italic text-[#e7e1d5] leading-relaxed max-w-2xl mx-auto"
+          >
+            با عطری ناب از دل طبیعت و طعمی که سلامت را در هر قطره جاری می‌کند،
+          </p>
+          <p
+            class="mt-6 text-sm sm:text-lg md:text-xl font-medium text-[#cbbf9a] max-w-xl mx-auto tracking-wide"
+          >
+            انتخابی که
+            <span class="border-[#aeb07d] pb-1 font-semibold"> کیفیت </span>
+            را به سبک زندگی‌تان می‌آورد.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- game section-->
+    <div
+      class="bg-olive min-h-screen flex flex-col lg:flex-row justify-center items-center gap-8 p-6 md:p-12 mx-auto"
+    >
+      <!-- متن کنار بازی  -->
+      <div
+        class="flex flex-col bg-dark-green justify-center max-w-md text-[#e7e1d5] shadow-lg p-6 rounded-xl"
+      >
+        <h2
+          class="text-2xl font-extrabold mb-4 text-[#5f6846] border-r-4 border-[#793c32] pr-3 drop-shadow-md"
+        >
+          مقایسه روغن پالم و روغن زیتون
+        </h2>
+        <p class="mb-3 text-[#d8d3c5] leading-relaxed">
+          روغن پالم که از میوه نخل روغنی تهیه می‌شود، به‌دلیل قیمت پایین و
+          پایداری بالا، در صنایع غذایی بسیار رایج است. اما این روغن سرشار از
+          چربی‌های اشباع است که مصرف زیاد آن می‌تواند خطر ابتلا به بیماری‌های
+          قلبی را افزایش دهد.
+        </p>
+        <p class="mb-3 text-[#d8d3c5] leading-relaxed">
+          در مقابل، روغن زیتون که از میوه زیتون استخراج می‌شود، غنی از چربی‌های
+          غیراشباع به‌ویژه اسید اولئیک است که برای سلامت قلب مفید بوده و خواص
+          ضدالتهاب و آنتی‌اکسیدانی دارد. روغن زیتون معمولاً برای مصرف خام یا
+          پخت‌وپز سبک توصیه می‌شود و به عنوان یک گزینه سالم‌تر و مغذی‌تر شناخته
+          شده است.
+        </p>
+        <p class="font-semibold text-[#4e5a3d] mt-4 text-lg">
+          شما کدام را برای سلامتی و طعم بهتر انتخاب می‌کنید؟ <br />
+          <span class="text-[#793c32] font-bold">پالم یا زیتون؟</span>
+        </p>
+      </div>
+
+      <!--بخش بازی-->
+      <div
+        class="w-[375px] h-[667px] bg-[#f7f5f2] shadow-[0_10px_30px_rgba(0,0,0,0.3)] rounded-2xl relative overflow-hidden border border-[#5f6846]"
+      >
+        <!-- بک‌گراند بازی با شفافیت کم -->
+        <div
+          class="absolute inset-0 bg-center bg-cover opacity-30 z-0"
+          style="background-image: url('/public/images/gameback.png')"
+        ></div>
+
+        <!-- تایمر و امتیاز -->
+        <div
+          class="flex justify-between text-sm p-2 text-[#37402c] font-semibold bg-[#eae6df] shadow-inner z-10"
+        >
+          <span id="score">امتیاز: 0</span>
+          <span id="timer">زمان: 120</span>
+        </div>
+
+        <!-- محیط بازی -->
+        <div id="doors-container" class="absolute inset-0 z-0"></div>
+
+        <!-- بازیکن -->
+        <img
+          id="player"
+          src="./public/images/logo diriqal.jpg"
+          class="absolute bottom-16 left-1/2 -translate-x-1/2 w-14 rounded-full border-2 border-[#793c32] shadow-[0_4px_10px_rgba(121,60,50,0.6),0_0_15px_rgba(95,104,70,0.4)] ring-2 ring-[#eae6df] transition-all duration-200 z-10"
+        />
+
+        <!-- کنترل حرکت -->
+        <div class="absolute bottom-2 w-full flex justify-center gap-6 z-20">
+          <button
+            id="right"
+            class="bg-[#793c32] hover:bg-[#a04a3d] text-white rounded-full w-14 h-14 text-2xl shadow-[0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-200 cursor-pointer"
+          >
+            →
+          </button>
+          <button
+            id="left"
+            class="bg-[#793c32] hover:bg-[#a04a3d] text-white rounded-full w-14 h-14 text-2xl shadow-[0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-200 cursor-pointer"
+          >
+            ←
+          </button>
+        </div>
+
+        <!-- دکمه شروع بازی -->
+        <button
+          id="start-btn"
+          class="absolute top-1/2 right-[130px] bg-[#5f6846] hover:bg-[#4e5a3d] text-white py-2 px-5 rounded-md shadow-[0_4px_12px_rgba(0,0,0,0.4)] z-30 transition duration-200 cursor-pointer"
+        >
+          شروع بازی
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="bg-[#2f3524] text-[#e7e1d5] py-4 text-center text-sm mt-10 shadow-inner"
+    >
+      <p class="inline-block">
+        © 2025 تمامی حقوق محفوظ است | تماس:
+        <a
+          href="tel:+09045436008"
+          class="text-[#a3b25c] hover:text-[#d0d68a] font-semibold mx-1 transition-colors duration-300"
+          >09045436008</a
+        >
+        | طراحی سایت توسط
+        <a
+          href="https://t.me/atria_m2"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-[#a3b25c] hover:text-[#d0d68a] font-semibold mx-1 transition-colors duration-300"
+          >@atria_m2</a
+        >
+        <br />
+        <a
+          href="https://t.me/i_yasaminn"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-[#a3b25c] hover:text-[#d0d68a] font-semibold mx-1 transition-colors duration-300"
+          >@i_yasaminn</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // بخش بازی
+      let score = 0;
+      let timeLeft = 120;
+      let intervalId;
+      let doorInterval;
+      let speedAdjustInterval;
+      let doorDelay = 2000;
+      let audio;
+
+      let greenDoorSound = new Audio("/public/music/wolfgreen.mp3");
+      let redDoorSound = new Audio("/public/music/wolfred.mp3");
+
+      greenDoorSound.volume = 0.7;
+      redDoorSound.volume = 0.7;
+
+      function stopAllSounds() {
+        greenDoorSound.pause();
+        redDoorSound.pause();
+        greenDoorSound.currentTime = 0;
+        redDoorSound.currentTime = 0;
+      }
+
+      function playGreenSound() {
+        stopAllSounds();
+        greenDoorSound.play();
+      }
+
+      function playRedSound() {
+        stopAllSounds();
+        redDoorSound.play();
+      }
+
+      const player = document.getElementById("player");
+      const doorsContainer = document.getElementById("doors-container");
+
+      function updateScoreDisplay() {
+        document.getElementById("score").textContent = "امتیاز: " + score;
+      }
+
+      function updateTimerDisplay() {
+        document.getElementById("timer").textContent = "زمان: " + timeLeft;
+      }
+
+      function createDoor() {
+        const door = document.createElement("div");
+        door.classList.add(
+          "absolute",
+          "w-16",
+          "h-24",
+          "top-[-120px]",
+          "flex",
+          "items-center",
+          "justify-center",
+          "rounded-lg",
+          "z-10"
+        );
+
+        const isGreen = Math.random() < 0.5;
+        door.classList.add(isGreen ? "bg-green-200" : "bg-red-200");
+
+        const img = document.createElement("img");
+        img.src = isGreen
+          ? "/public/images/olive-oil.png"
+          : "/public/images/palm-oil.png";
+
+        img.classList.add("max-w-[80%]", "max-h-[80%]", "object-contain");
+        door.appendChild(img);
+
+        const doorLeft = Math.random() * 290;
+        door.style.left = doorLeft + "px";
+        doorsContainer.appendChild(door);
+
+        const fall = setInterval(() => {
+          let top = parseInt(door.style.top || -120);
+          door.style.top = top + 5 + "px";
+
+          const doorRect = door.getBoundingClientRect();
+          const playerRect = player.getBoundingClientRect();
+
+          if (
+            doorRect.bottom >= playerRect.top &&
+            doorRect.left < playerRect.right &&
+            doorRect.right > playerRect.left
+          ) {
+            if (door.classList.contains("bg-green-200")) {
+              score++;
+              playGreenSound();
+            } else {
+              score -= 1;
+              playRedSound();
+            }
+            updateScoreDisplay();
+            door.remove();
+            clearInterval(fall);
+          }
+
+          if (top > 667) {
+            door.remove();
+            clearInterval(fall);
+          }
+        }, 30);
+      }
+
+      function adjustDoorSpeed() {
+        clearInterval(doorInterval);
+        if (doorDelay > 700) {
+          doorDelay -= 200;
+        }
+        doorInterval = setInterval(createDoor, doorDelay);
+      }
+
+      document.getElementById("start-btn").addEventListener("click", () => {
+        alert(
+          `🎮 قوانین بازی:  
+          از کارت‌های سبز رنگ رد شو و امتیاز بگیر!  
+          اما مواظب کارت‌های قرمز باش، اگر بزنی امتیازت کم میشه!  
+          حالا ببین چندتا کارت سبز می‌تونی پشت سر هم بزنی و رکورد بزنی!`
+        );
+
+        score = 0;
+        timeLeft = 120;
+        doorDelay = 2000;
+        updateScoreDisplay();
+        updateTimerDisplay();
+        document.getElementById("start-btn").classList.add("hidden");
+
+        audio = new Audio("./public/music/game.mp3");
+        audio.loop = true;
+        audio.play();
+        audio.volume = 0.3;
+
+        intervalId = setInterval(() => {
+          timeLeft--;
+          updateTimerDisplay();
+          if (timeLeft <= 0) {
+            clearInterval(intervalId);
+            clearInterval(doorInterval);
+            clearInterval(speedAdjustInterval);
+            endGame();
+          }
+        }, 1000);
+
+        doorInterval = setInterval(createDoor, doorDelay);
+        speedAdjustInterval = setInterval(adjustDoorSpeed, 15000);
+      });
+
+      function endGame() {
+        alert("بازی تموم شد! امتیاز نهایی: " + score);
+        document.getElementById("start-btn").classList.remove("hidden");
+
+        clearInterval(doorInterval);
+        clearInterval(speedAdjustInterval);
+
+        if (audio) {
+          audio.pause();
+          audio.currentTime = 0;
+        }
+      }
+
+      document.getElementById("left").addEventListener("click", () => {
+        player.style.left = Math.max(player.offsetLeft - 30, 0) + "px";
+      });
+
+      document.getElementById("right").addEventListener("click", () => {
+        const containerWidth = 375;
+        player.style.left =
+          Math.min(player.offsetLeft + 30, containerWidth - 60) + "px";
+      });
+
+      // بخش ویدیو ها
+      const videos = [
+        {
+          video: document.getElementById("video1"),
+          btn: document.getElementById("playBtn1"),
+        },
+        {
+          video: document.getElementById("video2"),
+          btn: document.getElementById("playBtn2"),
+        },
+        {
+          video: document.getElementById("video3"),
+          btn: document.getElementById("playBtn3"),
+        },
+      ];
+
+      videos.forEach(({ video, btn }) => {
+        btn.addEventListener("click", () => {
+          video.play();
+          btn.style.display = "none";
+        });
+        video.addEventListener("pause", () => {
+          btn.style.display = "flex";
+        });
+        video.addEventListener("ended", () => {
+          btn.style.display = "flex";
+        });
+      });
+    </script>
+  </body>
+</html>
