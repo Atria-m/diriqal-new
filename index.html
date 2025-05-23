@@ -652,8 +652,8 @@
       let doorDelay = 2000;
       let audio;
 
-      let greenDoorSound = new Audio("/public/music/wolfgreen.mp3");
-      let redDoorSound = new Audio("/public/music/wolfred.mp3");
+      let greenDoorSound = new Audio("./public/music/wolfgreen.mp3");
+      let redDoorSound = new Audio("./public/music/wolfred.mp3");
 
       greenDoorSound.volume = 0.7;
       redDoorSound.volume = 0.7;
@@ -705,8 +705,8 @@
 
         const img = document.createElement("img");
         img.src = isGreen
-          ? "/public/images/olive-oil.png"
-          : "/public/images/palm-oil.png";
+          ? "./public/images/olive-oil.png"
+          : "./public/images/palm-oil.png";
 
         img.classList.add("max-w-[80%]", "max-h-[80%]", "object-contain");
         door.appendChild(img);
