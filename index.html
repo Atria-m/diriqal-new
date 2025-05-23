@@ -42,6 +42,9 @@
       .bg-background {
         background-image: url(./public/images/background.jpg);
       }
+      .bg-game {
+        background-image: url(./public/images/gameback.png);
+      }
     </style>
   </head>
   <body class="bg-olive text-[#e7e1d5] font-vazir">
@@ -365,7 +368,9 @@
         زیتون بخور، مثل گرگ باش!
       </h2>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] mx-auto"
+      >
         <!-- ویدیو اول -->
         <div
           class="relative rounded-2xl overflow-hidden bg-black/40 border border-white/20 shadow-lg backdrop-blur-md"
@@ -560,8 +565,7 @@
       >
         <!-- بک‌گراند بازی با شفافیت کم -->
         <div
-          class="absolute inset-0 bg-center bg-cover opacity-30 z-0"
-          style="background-image: url('/public/images/gameback.png')"
+          class="absolute inset-0 bg-center bg-cover opacity-30 z-0 bg-game"
         ></div>
 
         <!-- تایمر و امتیاز -->
